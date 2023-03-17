@@ -23,14 +23,16 @@ h1{
     font-size: 2rem;
 }
 .rotate{
-  
     width: 60%;
     transform: rotate(30deg);
+    position: relative;
 }
 
 #features{
     padding: 7% 15%;
-    
+    position: relative;
+    background-color: white;
+    z-index: 1;   
 }
 
 .features-icon{
