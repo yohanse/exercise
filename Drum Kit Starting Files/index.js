@@ -9,13 +9,15 @@ function text(i){
 
 function play_sound() {
     var inner = this.innerHTML;
+    animation_make(inner);
     var a = num_relate[inner]; 
     var audio = new Audio(text(a));
     audio.play();
 }
 
 function play_sound_key(key) {
-    var a = num_relate[key]; 
+    animation_make(key);
+    var a = num_relate[key];
     var audio = new Audio(text(a));
     audio.play();
 }
@@ -33,3 +35,10 @@ document.addEventListener("keydown", (event) =>{
         }
     }
 })
+
+function animation_make(key){
+    document.querySelector("." + key).classList.add("pressed");
+    setTimeout(function(){
+        document.querySelector("." + key).classList.remove("pressed");
+    }, 300);
+}

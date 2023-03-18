@@ -1,0 +1,54 @@
+body{
+  text-align: center;
+  padding: 15%;
+  padding-top: 2%; 
+  background-color: #011F3F;
+}
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  margin-top: 2%;
+  color: #FEF2BF;
+}
+
+.row{
+  text-align: center;
+  padding: 15%;
+  padding-top: 5%;
+}
+
+.box{
+  height: 200px;
+  margin: 3%;
+  border: solid;
+  border-radius: 10%;
+  border-width: 5px;
+}
+
+.green{
+  background-color: green;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.next {
+  box-shadow: 0 0 20px white;
+  background-color: rgb(233, 113, 113);
+}
